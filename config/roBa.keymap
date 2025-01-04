@@ -73,7 +73,7 @@
 &kp LCTRL         &kp LEFT_ALT  &kp TAB  &mt LGUI LANG_HANJA  &kp SPACE  &mo 1          &kp ENTER       &mt RGUI LANG_HANGEUL                             &lt 3 ESCAPE
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         NUM {
