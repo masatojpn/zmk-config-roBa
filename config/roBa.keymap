@@ -69,8 +69,8 @@
             bindings = <
 &kp Q             &kp W         &kp E    &kp R     &kp T                                    &kp Y     &kp U  &lt 4 I    &kp O    &kp P
 &lt 2 A           &kp S         &kp D    &kp F     &kp G      &none          &kp MINUS      &kp H     &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C    &kp V     &kp B      &kp COLON      &kp SEMICOLON  &kp N     &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_ALT  &kp TAB  &kp LGUI  &kp SPACE  &mo 1          &kp ENTER      &kp RGUI                             &lt 4 ESCAPE
+&mt LEFT_SHIFT Z  &kp X         &kp C    &kp V     &kp B      &kp COLON      &kp SEMICOLON  &kp N     &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp LCTRL         &kp LEFT_ALT  &kp TAB  &kp LGUI  &kp SPACE  &mo 1          &kp ENTER      &kp RGUI                             &lt 3 ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
@@ -78,10 +78,10 @@
 
         NUM {
             bindings = <
-&kp EXCLAMATION  &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT                                    &kp CARET         &kp AMPERSAND      &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5             &trans      &kp UNDERSCORE  &kp NUMBER_6      &kp N7             &kp N8          &kp N9                &kp N0
-&kp GRAVE        &kp TILDE     &kp PLUS      &kp EQUAL     &kp DOUBLE_QUOTES  &trans      &kp PIPE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans           &trans        &trans        &trans        &trans             &trans      &trans          &trans                                                                     &trans
+&kp EXCLAMATION  &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT                                           &kp CARET         &kp AMPERSAND      &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5             &trans             &kp UNDERSCORE  &kp NUMBER_6      &kp N7             &kp N8          &kp N9                &kp N0
+&kp GRAVE        &kp TILDE     &kp PLUS      &kp EQUAL     &kp DOUBLE_QUOTES  &kp LG(LA(I))      &kp PIPE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
+&trans           &trans        &trans        &trans        &trans             &trans             &trans          &trans                                                                     &trans
             >;
         };
 
@@ -98,14 +98,14 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &mkp MB2  &mo 4   &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
+&trans  &trans  &trans  &trans  &trans                      &trans                    &trans    &mkp MB2  &mo 5   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                    &mkp MB1  &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                    &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(LC(LG(NUMBER_4)))                              &trans
             >;
         };
 
-        SCROLL {
+        AUTOMOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans                    &trans    &mkp MB2  &mo 5   &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                    &mkp MB1  &trans    &trans  &trans
@@ -114,12 +114,12 @@
             >;
         };
 
-        interface {
+        SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans              &trans    &mkp MB2  &mo 4   &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans              &mkp MB1  &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans              &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(LG(LC(N4)))                              &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
