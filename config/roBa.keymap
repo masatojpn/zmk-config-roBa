@@ -73,15 +73,15 @@
 &kp LCTRL         &kp LEFT_ALT  &kp TAB  &kp LGUI  &kp SPACE  &mo 1          &kp ENTER      &kp RGUI                             &lt 5 ESCAPE
             >;
 
-            sensor-bindings = <&inc_dec_kp LA(F7) LA(F8)>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         NUM {
             bindings = <
-&kp EXCLAMATION  &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT                              &kp CARET         &kp AMPERSAND      &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &trans      &kp UNDERSCORE  &kp NUMBER_6      &kp N7             &kp N8          &kp N9                &kp N0
-&kp GRAVE        &kp TILDE     &kp PLUS      &kp EQUAL     &trans       &trans      &kp PIPE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans           &trans        &trans        &trans        &trans       &trans      &trans          &trans                                                                     &trans
+&kp EXCLAMATION  &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT                                    &kp CARET         &kp AMPERSAND      &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5             &trans      &kp UNDERSCORE  &kp NUMBER_6      &kp N7             &kp N8          &kp N9                &kp N0
+&kp GRAVE        &kp TILDE     &kp PLUS      &kp EQUAL     &kp DOUBLE_QUOTES  &trans      &kp PIPE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
+&trans           &trans        &trans        &trans        &trans             &trans      &trans          &trans                                                                     &trans
             >;
         };
 
@@ -98,10 +98,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &mkp MB2  &mo 4   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
         };
 
