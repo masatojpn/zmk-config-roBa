@@ -83,6 +83,8 @@
 &trans           &trans        &trans        &trans        &trans       &trans      &trans  &trans        &trans         &trans        &trans                &trans
 &trans           &trans        &trans        &trans        &trans       &trans      &trans  &trans                                                           &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         ARROW {
@@ -104,7 +106,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(LC(LG(NUMBER_4)))                              &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LA(RS(Y)) RS(LA(T))>;
+            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
 
         AUTOMOUSE {
